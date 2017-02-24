@@ -10,6 +10,8 @@ public class UserInfoResponse extends HTTPResponse
 
     private UserInfo info = null;
 
+    
+
     public UserInfo getInfo() {
         return info;
     }
