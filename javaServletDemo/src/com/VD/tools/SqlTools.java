@@ -13,12 +13,12 @@ public class SqlTools
                     "  userName text NOT NULL ,\n" +
                     "  avatarUrl text NOT NULL ,\n" +
                     "  token text NOT NULL ,\n" +
-                    "  phone text NOT NULL ,\n" +
+                    "  phone text unque NOT NULL ,\n" +
                     "  passWord text NOT NULL ,\n" +
                     "  PRIMARY KEY(id),\n" +
                     "  WechatOpenId text\n" +
                     ")auto_increment=600000;";
-    
+
 
 
 

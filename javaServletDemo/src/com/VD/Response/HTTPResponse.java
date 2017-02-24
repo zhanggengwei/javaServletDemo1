@@ -3,10 +3,25 @@ package com.VD.Response;
 /**
  * Created by vd on 2017/2/24.
  */
-public interface HTTPResponse
+public class HTTPResponse
 {
+    private HTTPResponseCode code = null;
+    private String message = null;
+    public HTTPResponseCode getCode() {
+        return code;
+    }
 
-    String responseSucessCode = "200";
-    String responsePhoneOrPassWord = "401";
-    String responseUserNotExits = "300";
+    public void setCode(HTTPResponseCode code) {
+        this.code = code;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+
 }

@@ -29,24 +29,37 @@
       <mandatory>1</mandatory>
       <data-type>text|0</data-type>
     </column>
-    <column id="18" parent="14" name="token">
+    <column id="18" parent="14" name="region">
       <mandatory>1</mandatory>
       <data-type>text|0</data-type>
     </column>
-    <column id="19" parent="14" name="phone">
+    <column id="19" parent="14" name="token">
       <mandatory>1</mandatory>
       <data-type>text|0</data-type>
     </column>
-    <column id="20" parent="14" name="passWord">
+    <column id="20" parent="14" name="phone">
+      <mandatory>1</mandatory>
+      <data-type>char(11)|0</data-type>
+    </column>
+    <column id="21" parent="14" name="passWord">
       <mandatory>1</mandatory>
       <data-type>text|0</data-type>
     </column>
-    <column id="21" parent="14" name="WeChatOpenId">
+    <column id="22" parent="14" name="WechatOpenId">
       <data-type>text|0</data-type>
     </column>
-    <key id="22" parent="14" name="PRIMARY">
+    <index id="23" parent="14" name="phone">
+      <columns>phone</columns>
+      <desc-columns />
+      <unique>1</unique>
+    </index>
+    <key id="24" parent="14" name="PRIMARY">
       <columns>id</columns>
       <primary>1</primary>
+    </key>
+    <key id="25" parent="14" name="phone">
+      <columns>phone</columns>
+      <underlying-index>phone</underlying-index>
     </key>
   </database-model>
 </dataSource>

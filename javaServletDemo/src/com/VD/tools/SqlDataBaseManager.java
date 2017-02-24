@@ -13,6 +13,7 @@ import java.util.Properties;
  */
 public class SqlDataBaseManager
 {
+
     private Statement statement = null;
     private Connection connection = null;
     private static  SqlDataBaseManager instace = null;
@@ -75,6 +76,10 @@ public class SqlDataBaseManager
         }
         return SqlDataBaseManager.instace;
     }
+    public Statement getStatement() {
+        return statement;
+    }
+
     private static class  SqlDataBase
     {
 
@@ -111,5 +116,8 @@ public class SqlDataBaseManager
             this.sql_url = sql_url;
         }
 
+
     }
+
+
 }

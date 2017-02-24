@@ -12,6 +12,11 @@ public class UserInfo
     private String token = null;
     private String avatarUrl = null;
     private String WeChatOpenId = null;
+
+
+
+    private String region = null;
+
     public String getUserName() {
         return userName;
     }
@@ -67,6 +72,15 @@ public class UserInfo
     public void setWeChatOpenId(String weChatOpenId) {
         WeChatOpenId = weChatOpenId;
     }
+    public String getRegion() {
+        return region;
+    }
+
+    public void setRegion(String region) {
+        this.region = region;
+    }
+
+
 
 
 
