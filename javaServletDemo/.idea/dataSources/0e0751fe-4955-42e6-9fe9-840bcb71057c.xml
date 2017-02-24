@@ -1,0 +1,52 @@
+<dataSource name="MySQ- @localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="base">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="chatRoom" />
+    <schema id="3" name="chatSql" />
+    <schema id="4" name="dataBaseVD" />
+    <schema id="5" name="db" />
+    <schema id="6" name="information_schema" />
+    <schema id="7" name="mysql" />
+    <schema id="8" name="openfire" />
+    <schema id="9" name="performance_schema" />
+    <schema id="10" name="sqlDemoData" />
+    <schema id="11" name="sys" />
+    <schema id="12" name="user_Info" />
+    <schema id="13" name="VDDataBase" />
+    <table id="14" parent="1" name="User_Info" />
+    <column id="15" parent="14" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(6)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="16" parent="14" name="userName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="17" parent="14" name="avatarUrl">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="18" parent="14" name="token">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="19" parent="14" name="phone">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="20" parent="14" name="passWord">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="21" parent="14" name="WeChatOpenId">
+      <data-type>text|0</data-type>
+    </column>
+    <key id="22" parent="14" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
